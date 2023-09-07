@@ -52,4 +52,30 @@ main h2 {
     font-weight: normal;
     text-align: center;
     border: 1px solid #aab7b8;
+    padding: 0.8rem;
+}
+
+.tbl tr:nth-child(even){
+    background: #ccc;
+}
+
+.tbl tr:hover td{
+    background: #839192;
+    color: #000;
+    transition: all 0.3s ease-in;
+    cursor: pointer;
+}
+
+@media(max-width: 760px){
+    .tbl thead {
+        display: none;
+    }
+    .tbl tr, 
+    .tbl td{
+        display: block;
+        width: 100%;
+    }
+    .tbl tr{
+        margin-bottom: 1rem;
+    }
 }
